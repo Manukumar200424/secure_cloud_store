@@ -48,7 +48,7 @@ def get_current_user():
 def index():
     if session.get("user_id"):
         return redirect(url_for("home"))
-    return render_template("landing.html")
+    return render_template("index.html")
 
 # Pages
 @app.route("/home")
